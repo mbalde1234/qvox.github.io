@@ -1,0 +1,1078 @@
+﻿/* Phone Macro Progress Bars */
+.phone-macro-bar__fill {
+  background: var(--bar-color, #60A5FA);
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.phone-macro--p .phone-macro-bar__fill {
+  --bar-color: #AEEA00;
+}
+
+.phone-macro--c .phone-macro-bar__fill {
+  --bar-color: #06B6D4;
+}
+
+.phone-macro--f .phone-macro-bar__fill {
+  --bar-color: #C084FC;
+}
+
+/* Macro width helpers */
+.macro-78 { width: 78%; }
+.macro-64 { width: 64%; }
+.macro-52 { width: 52%; }
+
+/* Wave Bar Pattern */
+.wave-bar {
+  height: 20px;
+  background: linear-gradient(90deg, #60A5FA 0%, transparent var(--pct, 85%));
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.wave-85 { --pct: 85%; }
+
+/* Phone App Header Styles */
+.phone-app-header {
+  padding: 0.5rem;
+  text-align: center;
+  background: linear-gradient(to right, #121a2b, #17213a);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.phone-app-header.gradient-purple {
+  background: linear-gradient(135deg, #7C3AED, #A855F7);
+}
+
+.phone-app-title {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.phone-app-title.light { color: white; }
+
+/* Phone App Search Input */
+.phone-app-search {
+  width: 90%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #0b1220;
+  color: #F1F5F9;
+  font-size: 0.75rem;
+}
+
+/* Phone App Content */
+.phone-app-content {
+  padding: 1rem;
+  overflow-y: auto;
+  height: calc(100% - 80px);
+}
+
+.phone-app-content.narrow { text-align: center; }
+
+/* Recipe Card */
+.recipe-card {
+  margin-bottom: 0.8rem;
+  padding: 0.8rem;
+  background: #17213a;
+  border-radius: 8px;
+  border-left: 3px solid transparent;
+}
+
+.recipe-card.featured {
+  border-left-color: #AEEA00;
+}
+
+.recipe-card__title {
+  font-weight: 600;
+  color: #F1F5F9;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.recipe-card__meta {
+  font-size: 0.7rem;
+  color: #94A3B8;
+  margin: 0.3rem 0;
+}
+
+/* Analytics Cards */
+.analytics-hero {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #17213a;
+  border-radius: 8px;
+}
+
+.analytics-hero__value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #AEEA00;
+}
+
+.analytics-hero__label {
+  font-size: 0.8rem;
+  color: #94A3B8;
+}
+
+.analytics-chart {
+  height: 80px;
+  background: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120"%3e%3cdefs%3e%3clinearGradient id="grad" x1="0%25" y1="0%25" x2="0%25" y2="100%25"%3e%3cstop offset="0%25" stop-color="%231EA7FF" stop-opacity="0.6"/%3e%3cstop offset="100%25" stop-color="%231EA7FF" stop-opacity="0"/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath d="M0 90 Q50 60 80 70 T160 55 T240 65 T320 40 T400 50 V120 H0 Z" fill="url(%23grad)"/%3e%3cpath d="M0 90 Q50 60 80 70 T160 55 T240 65 T320 40 T400 50" fill="none" stroke="%231EA7FF" stroke-width="3" stroke-linecap="round"/%3e%3ccircle cx="320" cy="40" r="4" fill="%23AEEA00"/%3e%3c/svg%3e') center/contain no-repeat;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.analytics-tile {
+  text-align: center;
+  padding: 0.8rem;
+  background: #17213a;
+  border-radius: 8px;
+}
+
+.analytics-tile__label {
+  font-size: 0.7rem;
+  color: #94A3B8;
+}
+
+.analytics-tile__value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
+  color: #AEEA00;
+}
+
+.analytics-tile__value.cyan { color: #06B6D4; }
+
+/* Calculator Form Styles */
+.calculator-form input,
+.calculator-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.calculator-form input:focus,
+.calculator-form select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Result Display */
+.calculator-result {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f0f9ff;
+  border-left: 4px solid #3b82f6;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.hidden { display: none; }
+
+.result-info {
+  font-size: .85rem;
+  margin-top: 0.75rem;
+}
+
+/* Table section rows */
+.table-section {
+  background: #0f1618;
+}
+
+/* Progress bars */
+.cp-progress-50 { width: 50%; }
+
+/* Cookie consent tweaks */
+.cookie-consent { display: none; }
+.cookie-consent a { color: var(--lime); }
+
+/* â”€â”€â”€ Hero single-column (phone removed) â”€â”€â”€ */
+.hero__inner {
+  grid-template-columns: 1fr !important;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero__content {
+  opacity: 1 !important;
+  transform: none !important;
+}
+.hero__actions {
+  justify-content: center;
+}
+.hero__stores {
+  justify-content: center;
+}
+
+/* Fix: 'Beliebt' / 'Empfohlen' badge gets clipped by parent overflow */
+.pricing__panel,
+.pricing__grid,
+.pricing,
+.pricing.section,
+.clubs__cta,
+.clubs__pricing-cards {
+  overflow: visible !important;
+}
+.pricing__grid {
+  padding-top: 1.25rem;
+}
+.price-card,
+.clubs__plan {
+  overflow: visible !important;
+}
+.price-card__badge,
+.clubs__plan-badge {
+  z-index: 2;
+}
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   iPhone 17 â€” Ultra-Photorealistic Mockup
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+
+.iphone17 {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  width: 272px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 40px 120px rgba(0,0,0,.9)) drop-shadow(0 12px 40px rgba(0,0,0,.7));
+}
+
+/* Side hardware buttons â€” beveled + metallic */
+.iphone17__btn-action,
+.iphone17__btn-vol-up,
+.iphone17__btn-vol-down,
+.iphone17__btn-power {
+  position: absolute;
+  z-index: 3;
+  background: linear-gradient(to right,
+    #1A1A1E 0%, #2C2C30 20%, #3A3A3E 50%,
+    #2A2A2E 80%, #1A1A1C 100%
+  );
+}
+.iphone17__btn-action {
+  left: -4px; top: 88px;
+  width: 4px; height: 30px;
+  border-radius: 3px 0 0 3px;
+  box-shadow: -2px 0 6px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.18);
+}
+.iphone17__btn-vol-up {
+  left: -4px; top: 132px;
+  width: 4px; height: 42px;
+  border-radius: 3px 0 0 3px;
+  box-shadow: -2px 0 6px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.18);
+}
+.iphone17__btn-vol-down {
+  left: -4px; top: 186px;
+  width: 4px; height: 42px;
+  border-radius: 3px 0 0 3px;
+  box-shadow: -2px 0 6px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.18);
+}
+.iphone17__btn-power {
+  right: -4px; top: 148px;
+  width: 4px; height: 74px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(to left,
+    #1A1A1E 0%, #2C2C30 20%, #3A3A3E 50%,
+    #2A2A2E 80%, #1A1A1C 100%
+  );
+  box-shadow: 2px 0 6px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+/* Titanium unibody â€” 20-stop multi-direction light simulation */
+.iphone17__body {
+  position: relative;
+  background:
+    linear-gradient(168deg,
+      #2E2E32 0%,
+      #1E1E22 8%,
+      #141416 20%,
+      #1A1A1E 35%,
+      #0C0C0E 50%,
+      #181820 65%,
+      #222226 80%,
+      #1A1A1E 100%
+    );
+  border-radius: 46px;
+  padding: 11px;
+  box-shadow:
+    /* Crisp bright rim at top-left edge (studio directional light) */
+    inset 1px 1px 0 rgba(255,255,255,.24),
+    inset -1px -1px 0 rgba(255,255,255,.04),
+    /* Fine inner recess line between frame and screen */
+    inset 0 0 0 2.5px rgba(0,0,0,.85),
+    inset 0 3px 10px rgba(0,0,0,.4),
+    /* Outer casting shadow â€” multi-layer for soft photo look */
+    0 2px 4px rgba(0,0,0,.6),
+    0 8px 20px rgba(0,0,0,.55),
+    0 25px 60px rgba(0,0,0,.5),
+    0 50px 120px rgba(0,0,0,.4);
+}
+
+/* Top-left specular light ray on the metal */
+.iphone17__body::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 55%;
+  border-radius: 46px 46px 200px 200px / 46px 46px 100px 100px;
+  background: linear-gradient(138deg,
+    rgba(255,255,255,.13) 0%,
+    rgba(255,255,255,.05) 12%,
+    transparent 26%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+/* Bottom-right secondary reflection */
+.iphone17__body::after {
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0; left: 0;
+  height: 45%;
+  border-radius: 0 0 46px 46px;
+  background: linear-gradient(340deg,
+    rgba(255,255,255,.05) 0%,
+    transparent 40%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* OLED screen panel */
+.iphone17__screen {
+  position: relative;
+  background: #060610;
+  border-radius: 36px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 548px;
+  /* Inner screen bezel */
+  box-shadow:
+    inset 0 0 0 1px rgba(0,0,0,1),
+    inset 0 0 30px rgba(0,0,0,.6);
+  z-index: 2;
+}
+
+/* Glass screen reflection â€” angled top-left specular */
+.iphone17__screen::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 36px;
+  background: linear-gradient(130deg,
+    rgba(255,255,255,.1) 0%,
+    rgba(255,255,255,.05) 18%,
+    transparent 40%
+  );
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Dynamic Island â€” glass pill with multi-layer depth */
+.iphone17__island {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 122px;
+  height: 36px;
+  background: radial-gradient(ellipse at 50% 0%, #1A1A24 0%, #000 70%);
+  border-radius: 22px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 12px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.06),
+    0 0 0 2px rgba(0,0,0,.9),
+    0 4px 20px rgba(0,0,0,.8),
+    inset 0 1px 2px rgba(255,255,255,.06),
+    inset 0 -1px 3px rgba(0,0,0,.8);
+}
+
+/* Tiny corner cut at base of Dynamic Island */
+.iphone17__island::before {
+  content: '';
+  position: absolute;
+  bottom: -6px; left: 2px;
+  width: 8px; height: 8px;
+  background: #000;
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+  opacity: .6;
+}
+.iphone17__island::after {
+  content: '';
+  position: absolute;
+  bottom: -6px; right: 2px;
+  width: 8px; height: 8px;
+  background: #000;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  opacity: .6;
+}
+
+/* Camera lens inside Dynamic Island */
+.iphone17__island-cam {
+  width: 13px; height: 13px;
+  background: radial-gradient(circle at 35% 35%,
+    #2A2A50 0%, #101018 45%, #060610 100%
+  );
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,.06);
+  box-shadow:
+    inset 0 0 4px rgba(30,60,180,.25),
+    inset 0 0 1px rgba(255,255,255,.08),
+    0 0 6px rgba(0,0,0,.8);
+  position: relative;
+}
+.iphone17__island-cam::after {
+  content: '';
+  position: absolute;
+  top: 2px; left: 2px;
+  width: 4px; height: 4px;
+  background: rgba(80,120,255,.18);
+  border-radius: 50%;
+}
+
+/* Status Bar */
+.iphone17__statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px 0;
+  height: 52px;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+}
+.iphone17__time {
+  font-size: 14.5px;
+  font-weight: 700;
+  letter-spacing: -.4px;
+  color: #fff;
+  font-family: -apple-system, 'SF Pro Display', system-ui, sans-serif;
+}
+.iphone17__status-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* App Content Area */
+.iphone17__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Bottom Nav â€” frosted glass effect */
+.iphone17__bottomnav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 8px 6px;
+  background: rgba(8,8,18,.88);
+  backdrop-filter: blur(30px) saturate(1.8);
+  -webkit-backdrop-filter: blur(30px) saturate(1.8);
+  border-top: .5px solid rgba(255,255,255,.08);
+}
+
+/* Home Indicator */
+.iphone17__home-indicator {
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(6,6,16,.9);
+}
+.iphone17__home-indicator::before {
+  content: '';
+  width: 130px; height: 5px;
+  background: rgba(255,255,255,.38);
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(255,255,255,.1);
+}
+
+/* Bottom hardware edge â€” matching titanium */
+.iphone17__bottom-edge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 28px 12px;
+  background: linear-gradient(168deg,
+    #252528 0%, #1A1A1E 25%,
+    #101012 50%, #1C1C20 75%,
+    #222224 100%
+  );
+  border-radius: 0 0 46px 46px;
+  margin-top: -11px;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 12px 30px rgba(0,0,0,.5);
+}
+/* Speaker grilles â€” row of tiny dots */
+.iphone17__speaker {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.iphone17__speaker::before {
+  content: '';
+  display: block;
+  width: 18px; height: 5px;
+  background: rgba(0,0,0,.0);
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,.9),
+    4px 0 0 rgba(0,0,0,.9),
+    8px 0 0 rgba(0,0,0,.9),
+    12px 0 0 rgba(0,0,0,.9),
+    16px 0 0 rgba(0,0,0,.9),
+    /* subtle inset light on each hole */
+    0 -1px 0 rgba(255,255,255,.04),
+    4px -1px 0 rgba(255,255,255,.04),
+    8px -1px 0 rgba(255,255,255,.04),
+    12px -1px 0 rgba(255,255,255,.04),
+    16px -1px 0 rgba(255,255,255,.04);
+  border-radius: 1px;
+  height: 5px;
+}
+.iphone17__speaker::after { display: none; }
+
+/* USB-C port */
+.iphone17__usbc {
+  width: 32px; height: 9px;
+  background: linear-gradient(to bottom,
+    rgba(0,0,0,.7) 0%, rgba(0,0,0,.55) 100%
+  );
+  border-radius: 5px;
+  box-shadow:
+    inset 0 2px 4px rgba(0,0,0,.9),
+    inset 0 -1px 0 rgba(255,255,255,.04),
+    0 1px 0 rgba(255,255,255,.1);
+}
+
+/* â”€â”€ Bottom Nav Items â”€â”€ */
+.i17-bnav {
+  display: flex;
+  color: rgba(255,255,255,.32);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 8px;
+  transition: color .2s;
+  line-height: 0;
+}
+.i17-bnav--active { color: #AEEA00 !important; filter: drop-shadow(0 0 4px rgba(174,234,0,.4)); }
+.i17-bnav--add {
+  background: #AEEA00;
+  color: #020205 !important;
+  width: 36px; height: 36px;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 14px rgba(174,234,0,.35);
+}
+
+/* â”€â”€ App Header â”€â”€ */
+.i17-app-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px 9px;
+  background: linear-gradient(to bottom, #0A1020, #080E1B);
+  border-bottom: .5px solid rgba(255,255,255,.06);
+}
+.i17-app-header--dark { justify-content: flex-start; }
+.i17-app-header--purple {
+  background: linear-gradient(140deg, #3B0764 0%, #5B21B6 60%, #7C3AED 100%);
+  justify-content: center;
+  border-bottom: none;
+  padding: 14px 16px 13px;
+  box-shadow: 0 4px 20px rgba(124,58,237,.3);
+}
+.i17-logo { width: 22px; height: 22px; object-fit: contain; }
+.i17-app-name {
+  font-size: 12px; font-weight: 600;
+  color: #E2E8F0;
+  font-family: -apple-system, system-ui, sans-serif;
+}
+.i17-app-name strong { color: #AEEA00; font-weight: 700; }
+.i17-screen-title {
+  font-size: 15px; font-weight: 700;
+  color: #fff; letter-spacing: -.35px;
+  font-family: -apple-system, system-ui, sans-serif;
+}
+
+/* â”€â”€ Dashboard: Calorie Ring â”€â”€ */
+.i17-ring-wrap {
+  display: flex; justify-content: center; align-items: center;
+  padding: 12px 0 4px;
+  position: relative;
+}
+.i17-ring-text {
+  position: absolute;
+  display: flex; flex-direction: column; align-items: center;
+}
+.i17-ring-num {
+  font-size: 21px; font-weight: 800; color: #fff;
+  letter-spacing: -.5px; line-height: 1;
+  font-family: -apple-system, system-ui, sans-serif;
+}
+.i17-ring-lbl { font-size: 10px; color: #64748B; margin-top: 4px; letter-spacing: .5px; text-transform: uppercase; }
+
+/* â”€â”€ Macros â”€â”€ */
+.i17-macros {
+  display: flex; flex-direction: column; gap: 10px;
+  padding: 6px 18px 14px;
+  border-top: .5px solid rgba(255,255,255,.06);
+  background: linear-gradient(to bottom, rgba(255,255,255,.02), transparent);
+}
+.i17-macro { display: flex; align-items: center; gap: 9px; }
+.i17-macro-track {
+  flex: 1; height: 4px;
+  background: rgba(255,255,255,.07);
+  border-radius: 2px; overflow: hidden;
+}
+.i17-macro-fill { height: 100%; border-radius: 2px; box-shadow: 0 0 6px currentColor; }
+.i17-macro-val { font-size: 10px; font-weight: 700; color: #E2E8F0; width: 32px; text-align: right; }
+.i17-macro-lbl { font-size: 9px; color: #475569; width: 38px; text-transform: uppercase; letter-spacing: .3px; }
+
+/* â”€â”€ Recipe Search â”€â”€ */
+.i17-search-wrap {
+  display: flex; align-items: center; gap: 8px;
+  margin: 10px 14px 8px;
+  background: rgba(255,255,255,.05);
+  border-radius: 12px;
+  padding: 8px 12px;
+  border: .5px solid rgba(255,255,255,.08);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.i17-search-placeholder { font-size: 11px; color: #475569; }
+
+/* â”€â”€ Recipe List â”€â”€ */
+.i17-recipes { display: flex; flex-direction: column; gap: 5px; padding: 0 14px; flex: 1; overflow: hidden; }
+.i17-recipe {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 11px;
+  background: rgba(255,255,255,.04);
+  border-radius: 13px;
+  border: .5px solid rgba(255,255,255,.06);
+  transition: background .2s;
+}
+.i17-recipe--featured {
+  background: linear-gradient(135deg, rgba(174,234,0,.1), rgba(174,234,0,.04));
+  border-color: rgba(174,234,0,.2);
+  box-shadow: 0 2px 12px rgba(174,234,0,.06);
+}
+.i17-recipe-emoji { font-size: 20px; line-height: 1; filter: drop-shadow(0 1px 3px rgba(0,0,0,.4)); }
+.i17-recipe-info { flex: 1; }
+.i17-recipe-name {
+  font-size: 11px; font-weight: 600; color: #E2E8F0;
+  line-height: 1.3; font-family: -apple-system, system-ui, sans-serif;
+}
+.i17-recipe-meta { font-size: 9px; color: #475569; margin-top: 2px; }
+.i17-recipe-kcal { font-size: 11px; font-weight: 700; color: #AEEA00; }
+
+/* â”€â”€ Analytics â”€â”€ */
+.i17-analytics { padding: 8px 14px; display: flex; flex-direction: column; gap: 7px; flex: 1; overflow: hidden; }
+.i17-stat-hero {
+  background: linear-gradient(135deg, rgba(174,234,0,.08), rgba(174,234,0,.02));
+  border-radius: 14px;
+  padding: 11px 14px;
+  border: .5px solid rgba(174,234,0,.15);
+  box-shadow: 0 4px 20px rgba(174,234,0,.05);
+}
+.i17-stat-hero__val {
+  font-size: 24px; font-weight: 800; color: #AEEA00;
+  letter-spacing: -.5px; line-height: 1.1;
+  font-family: -apple-system, system-ui, sans-serif;
+  text-shadow: 0 0 20px rgba(174,234,0,.3);
+}
+.i17-stat-hero__lbl { font-size: 10px; color: #64748B; margin-top: 2px; margin-bottom: 8px; letter-spacing: .3px; }
+.i17-weight-bar { height: 4px; background: rgba(255,255,255,.07); border-radius: 2px; overflow: hidden; }
+.i17-weight-fill { width: 65%; height: 100%; background: linear-gradient(90deg, #AEEA00, #76FF03); border-radius: 2px; box-shadow: 0 0 8px rgba(174,234,0,.4); }
+.i17-chart-lbl { font-size: 9px; color: #475569; text-transform: uppercase; letter-spacing: .5px; }
+.i17-chart {
+  background: rgba(255,255,255,.03);
+  border-radius: 10px; padding: 6px;
+  border: .5px solid rgba(255,255,255,.05);
+  overflow: hidden;
+}
+.i17-stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.i17-stat-tile {
+  background: rgba(255,255,255,.04);
+  border-radius: 12px;
+  padding: 9px 10px;
+  border: .5px solid rgba(255,255,255,.06);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.i17-stat-tile__val {
+  font-size: 16px; font-weight: 800; color: #AEEA00;
+  line-height: 1.2; margin-top: 3px;
+  font-family: -apple-system, system-ui, sans-serif;
+}
+.i17-stat-tile__lbl { font-size: 9px; color: #475569; margin-top: 2px; text-transform: uppercase; letter-spacing: .3px; }
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   Smooth Carousel â€” full-width slide-by-slide
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+.phones-carousel {
+  position: relative !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  padding: 24px 0 48px !important;
+  height: auto !important;
+}
+.phones-track {
+  display: flex !important;
+  width: 300% !important;
+  gap: 0 !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  transition: transform .52s cubic-bezier(.4,0,.2,1) !important;
+  overflow-x: visible !important;
+  padding: 0 !important;
+}
+.phones-track.dragging { transition: none !important; }
+.phone-slide {
+  width: calc(100% / 3) !important;
+  flex: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  padding: 10px 20px !important;
+  transform: none !important;
+  transition: none !important;
+}
+.phone-slide:hover { transform: none !important; }
+.phone-slide:nth-child(1),
+.phone-slide:nth-child(2),
+.phone-slide:nth-child(3) { animation: none !important; opacity: 1 !important; }
+.phone-label {
+  font-size: 13px !important; font-weight: 600 !important;
+  color: rgba(255,255,255,.55) !important;
+  margin-top: 20px !important; letter-spacing: .3px !important;
+}
+.phones-dots {
+  display: flex !important;
+  justify-content: center;
+  gap: 8px; margin-top: 20px;
+}
+.dot {
+  width: 8px !important; height: 8px !important;
+  border-radius: 4px !important;
+  background: rgba(255,255,255,.18) !important;
+  border: none !important;
+  cursor: pointer; padding: 0;
+  transition: width .3s ease, background .3s ease !important;
+}
+.dot.active {
+  width: 28px !important;
+  background: #AEEA00 !important;
+  box-shadow: 0 0 12px rgba(174,234,0,.45) !important;
+}
+
+/* ══════════════════════════════════════════════
+   Vereine & Clubs Section
+══════════════════════════════════════════════ */
+.clubs {
+  background: linear-gradient(180deg, var(--bg) 0%, rgba(174,234,0,.03) 50%, var(--bg) 100%);
+  border-top: 1px solid rgba(174,234,0,.08);
+  border-bottom: 1px solid rgba(174,234,0,.08);
+}
+
+/* 6-feature grid */
+.clubs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+@media (max-width: 900px) {
+  .clubs__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 580px) {
+  .clubs__grid { grid-template-columns: 1fr; }
+}
+
+.clubs__feature {
+  background: var(--surface);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: border-color .2s, box-shadow .2s;
+}
+.clubs__feature:hover {
+  border-color: rgba(174,234,0,.3);
+  box-shadow: 0 4px 24px rgba(174,234,0,.06);
+}
+.clubs__icon {
+  width: 52px; height: 52px;
+  background: rgba(174,234,0,.08);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--lime);
+  border: 1px solid rgba(174,234,0,.15);
+}
+.clubs__feature h4 {
+  font-size: var(--fs-base);
+  font-weight: 700;
+  margin-bottom: .5rem;
+  color: var(--text1);
+}
+.clubs__feature p {
+  font-size: var(--fs-sm);
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+/* 3 pricing cards horizontal */
+.clubs__cta { text-align: center; }
+.clubs__pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  max-width: 860px;
+  margin: 0 auto 1.5rem;
+}
+@media (max-width: 720px) {
+  .clubs__pricing-cards { grid-template-columns: 1fr; max-width: 380px; }
+}
+
+.clubs__plan {
+  background: var(--surface);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+  position: relative;
+  transition: border-color .2s, transform .2s;
+}
+.clubs__plan:hover {
+  border-color: rgba(174,234,0,.25);
+  transform: translateY(-3px);
+}
+.clubs__plan--featured {
+  border-color: var(--lime);
+  background: linear-gradient(180deg, rgba(174,234,0,.06) 0%, var(--surface) 60%);
+  box-shadow: 0 0 40px rgba(174,234,0,.1);
+}
+.clubs__plan-badge {
+  position: absolute;
+  top: -.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--lime), var(--lime2));
+  color: var(--bg);
+  font-size: .7rem;
+  font-weight: 700;
+  padding: .2rem .9rem;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+.clubs__plan-name {
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--text1);
+}
+.clubs__plan-price {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--lime);
+  letter-spacing: -.03em;
+  line-height: 1.1;
+}
+.clubs__plan-price span {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--text2);
+}
+.clubs__plan-sub {
+  font-size: var(--fs-xs);
+  color: var(--text2);
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: .5rem;
+}
+.clubs__plan .btn {
+  width: 100%;
+  text-align: center;
+}
+.clubs__note {
+  font-size: var(--fs-xs);
+  color: var(--text2);
+  margin-top: .5rem;
+  opacity: .7;
+}
+
+/* ══════════════════════════════════════════════
+   Physiotherapeuten Section
+══════════════════════════════════════════════ */
+.physio {
+  background: linear-gradient(180deg, var(--bg) 0%, rgba(56,182,255,.03) 50%, var(--bg) 100%);
+  border-top: 1px solid rgba(56,182,255,.08);
+  border-bottom: 1px solid rgba(56,182,255,.08);
+}
+.physio__content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.physio__card {
+  background: var(--surface);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+}
+.physio__status {
+  margin-bottom: 1.5rem;
+}
+.physio__badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #38b6ff, #0084d6);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: .35rem 1.2rem;
+  border-radius: 50px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  animation: physio-pulse 2.5s ease-in-out infinite;
+}
+@keyframes physio-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(56,182,255,.4); }
+  50% { box-shadow: 0 0 20px 6px rgba(56,182,255,.15); }
+}
+.physio__icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(56,182,255,.08);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: #38b6ff;
+  border: 1px solid rgba(56,182,255,.15);
+}
+.physio__card h3 {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  margin-bottom: .75rem;
+  color: var(--text1);
+}
+.physio__card > p {
+  font-size: var(--fs-base);
+  color: var(--text2);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.physio__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem 1.5rem;
+  text-align: left;
+}
+@media (max-width: 580px) {
+  .physio__features { grid-template-columns: 1fr; }
+  .physio__card { padding: 2rem 1.5rem; }
+}
+.physio__features li {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: var(--fs-sm);
+  color: var(--text2);
+  line-height: 1.5;
+}
+.physio__features li svg {
+  flex-shrink: 0;
+  color: #38b6ff;
+}
+.physio__cta {
+  border-top: 1px solid var(--outline);
+  padding-top: 1.5rem;
+}
+.physio__cta .btn {
+  min-width: 220px;
+}
+.physio__hint {
+  font-size: var(--fs-xs);
+  color: var(--text2);
+  margin-top: .75rem;
+  opacity: .7;
+}
+
+/* Live app reference block (uses real /app web build in iframe) */
+.app-preview {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(140deg, rgba(11, 18, 32, 0.78), rgba(5, 10, 20, 0.92));
+}
+.app-preview__head h3 {
+  margin: 0.35rem 0 0.65rem;
+  font-size: var(--fs-2xl);
+  color: var(--text1);
+}
+.app-preview__head p {
+  margin: 0 0 1.1rem;
+  color: var(--text2);
+}
+.app-preview__frame-wrap {
+  display: grid;
+  gap: 0.85rem;
+  justify-items: center;
+}
+.app-preview__frame {
+  width: min(360px, 100%);
+  border: 10px solid #111827;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.45);
+  background: #02040b;
+}
+.app-preview__frame iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 19.5;
+  border: 0;
+  background: #02040b;
+}
+
+.pricing__support-note {
+  margin-top: 1rem;
+  color: var(--text2);
+  font-size: var(--fs-sm);
+}

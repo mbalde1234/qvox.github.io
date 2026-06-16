@@ -1,0 +1,34 @@
+{
+  "channel": "stable",
+  "source": "startup-sync",
+  "lastUpdated": "2026-06-16T18:33:35.417Z",
+  "items": [
+    {
+      "id": "growth-hub-profile",
+      "title": "Growth Hub im Profil ausgebaut",
+      "summary": "Neuer Conversion-Bereich mit gezielten Aktionen fuer Upgrade, Referral und Sharing.",
+      "category": "growth",
+      "status": "live",
+      "appVersion": "1.0.0",
+      "publishedAt": "2026-04-24"
+    },
+    {
+      "id": "membership-reco",
+      "title": "Personalisierte Membership-Empfehlung",
+      "summary": "Membership-Seite priorisiert den besten Plan anhand von Aktivitaet, Rollen und Fortschritt.",
+      "category": "membership",
+      "status": "live",
+      "appVersion": "1.0.0",
+      "publishedAt": "2026-04-24"
+    },
+    {
+      "id": "funnel-telemetry",
+      "title": "Besseres Funnel-Tracking",
+      "summary": "Neue Telemetrie-Events zeigen, welche Einstiegspunkte und Empfehlungen am besten konvertieren.",
+      "category": "analytics",
+      "status": "live",
+      "appVersion": "1.0.0",
+      "publishedAt": "2026-04-24"
+    }
+  ]
+}

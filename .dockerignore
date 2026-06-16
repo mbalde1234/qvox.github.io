@@ -1,0 +1,7 @@
+# Ignore common files
+.git
+.gitignore
+node_modules
+*.md
+*.log
+.DS_Store
